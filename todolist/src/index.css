@@ -13,13 +13,19 @@ input,
 button {
   font-family: 'Press Start 2P', system-ui;
 }
+main h1{
+  text-align: center;
+  color: aquamarine;
+}
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 14px;
-  background: #eff6ff;
+  background-image: url('./assets/todoback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   gap: 14px;
 }
 
@@ -32,8 +38,15 @@ header,
 .main {
   max-width: 800px;
   width: 100%;
-  margin: 14px auto;
+  margin: 24px auto;
   gap: 14px;
+  
+  
+}
+.main li {
+  box-shadow: rgba(25, 21, 24, 2.0) 0px 5px 15px;
+  background-color: rgb(144, 223, 223);
+  
 }
 
 header input {
@@ -59,11 +72,13 @@ header input {
   padding: 14px 18px;
   border: none;
   outline: none;
-  background: white;
+  background: rgb(240, 249, 248);
+  box-shadow: rgb(6, 35, 75) 0px 5px 15px;
 }
 
 p {
   font-size: 0.9em;
+  color: white;
 }
 
 .main {
@@ -78,11 +93,12 @@ p {
   gap: 14px;
   padding: 14px;
   border-radius: 14px;
-  background: white;
+  
 }
 
 .todoItem p {
   flex: 1;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .actionsContainer {
@@ -96,6 +112,10 @@ p {
   border: none;
   background: transparent;
   cursor: pointer;
+  
+}
+.actionsContainer button i{
+  color: white;
 }
 
 .actionsContainer button:hover {
